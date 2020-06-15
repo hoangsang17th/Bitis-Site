@@ -1,0 +1,19 @@
+.vdyt{
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: 15px;
+}
+h1{
+    color: #4d96ff;
+}
+.imggiay img{
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.19);
+    border: 5px solid #fff;
+    margin-bottom: 50px;
+    
+}
+.ml2{
+    padding-left: 90px;
+}

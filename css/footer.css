@@ -1,0 +1,29 @@
+@media only screen and (min-width: 992px) {
+    footer .sb{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    footer .dk{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 578px) {
+    footer .row .col p a{
+        font-size: 16px;
+        text-decoration: none;
+    }
+}
+footer a{
+    
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+footer .pttt img{
+    margin-left: 3px;
+    margin-bottom: 6px;
+}
+footer .bq{
+    text-align: center;
+}
