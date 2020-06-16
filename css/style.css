@@ -33,3 +33,32 @@ a{
         color: #fff;
     }
 }
+a:link{
+    text-decoration: none!important;
+}
+a:hover{
+    color: #000;
+    opacity: 0.9;
+}
+.search-txt{
+    border: none;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    float: center;
+    padding-left: 5px;
+    font-size: 16px;
+    transition: 0.4s;
+    width: 0px;
+    height: 35px;
+}
+.search-box:hover>.search-txt{
+    width: 240px;
+    background: #fff;
+}
+@media only screen and (max-width:992px){
+    .search-box:hover>.search-txt{
+        width: 100%;
+        background: #fff;
+    }
+}
