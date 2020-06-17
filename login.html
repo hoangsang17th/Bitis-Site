@@ -32,13 +32,23 @@
                         </div>
                         <input type="text" class="form-control" placeholder="Tài khoản">
                     </div>
-                    <div class="input-group mb-2">
+                    <div class="input-group mb-2 textb">
                         <div class="input-group-prepend">
                             <div class="input-group-text"><i class="fas fa-lock"></i></div>
                         </div>
                         <input type="password" class="form-control" placeholder="Mật khẩu">
+                        <i class="show-password far fa-eye-slash"></i>
                     </div>
-                    <button type="submit" class="btn btn-primary">Đăng Nhập</button>
+                    <div class="form-check mb-2">
+                        <div class="checkbox-area">
+                            <input id="cbAgree" name="cbAgree" type="checkbox" value="1" class="form-check-input" data-error="#blockcbAgree-error">
+                            <label class="form-check-label" for="cbAgree">
+                            Ghi nhớ
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary bn">Đăng Nhập</button>
                     <div class="col-12 forgot">
                         Hoặc Đăng Nhập Bằng Tài Khoản
                     </div>
@@ -61,7 +71,31 @@
 
 
 
-
+    <script>
+        var fields= document.querySelector(".textb input");
+        function check(){
+            if (fields.value!=""){
+                return flase;
+            }
+            else  return true;
+        }
+        fields.addEventListener("keyup",check);
+        document.querySelector(".show-password").addEventListener("click",
+        function check(){
+            if(this.classList[2]=="fa-eye-slash"){
+                this.classList.remove("fa-eye-slash");
+                this.classList.add("fa-eye")
+                fields.type="text";
+            }
+            else {
+                this.classList.remove("fa-eye");
+                this.classList.add("fa-eye-slash")
+                fields.type="password";
+            }
+        });
+        
+        
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
