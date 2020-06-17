@@ -33,6 +33,9 @@ a{
         font-size: 12px;
         color: #fff;
     }
+    .hrspnb{
+        width: 100%;
+    }
 }
 a:link{
     text-decoration: none!important;
@@ -83,6 +86,9 @@ a:hover{
         text-decoration: none;
     }
     footer .m2 {
+        text-align: center;
+    }
+    footer .form-group input{
         text-align: center;
     }
 }
