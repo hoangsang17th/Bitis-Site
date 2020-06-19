@@ -8,3 +8,4 @@ $(".slider-one")
     prevArrow: ".site-slider .slider-btn .prev",
     nextArrow: ".site-slider .slider-btn .next",
 });
+$
