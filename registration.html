@@ -25,38 +25,38 @@
                 </div>
                 <div class="form-head-register">
                     <h4 class="title-block">Đăng Ký Tài Khoản</h4>
-                    <form id="frmSignup" method="POST" action="/">
+                    <form id="frmSignup"  action="index.html">
                         
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-user-tie"></i></div>
                             </div>
-                            <input name="username" type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="username">
+                            <input name="username" type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="username" required>
                         </div>
                         
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="far fa-envelope"></i></div>
                             </div>
-                            <input name="email" type="email" class="form-control" placeholder="Email" autocomplete="email">
+                            <input name="email" type="email" class="form-control" placeholder="Email" autocomplete="email" required>
                         </div>
             
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-lock"></i></div>
                             </div>
-                            <input name="password" type="password" class="form-control" placeholder="Mật khẩu" autocomplete="current-password" aria-autocomplete="list">
+                            <input name="password" type="password" class="form-control" placeholder="Mật khẩu" autocomplete="current-password" aria-autocomplete="list" required>
                         </div>
                     <div class="form-check">
                         <div class="checkbox-area">
-                            <input id="cbAgree" name="cbAgree" type="checkbox" value="1" class="form-check-input" data-error="#blockcbAgree-error">
+                            <input id="cbAgree" name="cbAgree" type="checkbox" value="1" class="form-check-input" data-error="#blockcbAgree-error" required>
                             <label class="form-check-label" for="cbAgree">
                             Đồng ý với <a href="Dieu-khoan.html" target="_blank">Điều khoản</a> của Hoàng Sang
                             </label>
                         </div>
                     <div id="blockcbAgree-error"></div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                    <button type="submit2" class="btn btn-primary">Đăng ký</button>
                     </form>
                     <div class="switch-type-login">Hoặc sử dụng tài khoản khác</div>
                     <div class="signin-options">
