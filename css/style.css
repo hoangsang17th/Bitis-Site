@@ -42,7 +42,7 @@ a:link{
 }
 a:hover{
     color: #000;
-    opacity: 0.9;
+    opacity: 1;
 }
 .search-txt{
     border: none;
@@ -109,4 +109,7 @@ footer .pttt img{
 }
 footer .bq{
     text-align: center;
+}
+.row .col-sm-3 img{
+    width: 100%;
 }
