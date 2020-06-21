@@ -59,6 +59,7 @@ a:hover{
 .search-box:hover>.search-txt{
     width: 240px;
     background: #fff;
+    transition: 0.1s;
 }
 @media only screen and (max-width:992px){
     .search-box:hover>.search-txt{
