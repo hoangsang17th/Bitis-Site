@@ -1,0 +1,16 @@
+#exzoom{
+    width: 50%;
+    
+}
+.description h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.description small{
+    color: gray;
+    font-size: 16px;
+}
+.description h5 b{
+    color: rgb(255, 2, 2);
+    font-size: 27px;
+}

@@ -15,6 +15,8 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/Bitis-Hunter-X.css">
+    <link rel="stylesheet" href="../css/jquery.exzoom.css">
 
 </head>
 <body>
@@ -64,6 +66,40 @@
         </form>
         </div>
     </nav>
+    <!-- Bắt đầu trình bày sản phẩm -->
+    <div class="container-fluid">
+        <div class="row my-5">
+            <div class="col-12 text-center justify-content-center">
+                <div class="exzoom" id="exzoom">
+                    <!-- Images -->
+                    <div class="exzoom_img_box">
+                        <ul class='exzoom_img_ul'>
+                            <li><img src="../Img/Assets/biti6.1.jpg"/></li>
+                            <li><img src="../Img/Assets/biti6.2.jpg"/></li>
+                            <li><img src="../Img/Assets/biti6.3.jpg"/></li>
+                            <li><img src="../Img/Assets/biti7.1.jpg"/></li>
+                            <li><img src="../Img/Assets/biti7.2.jpg"/></li>
+                        </ul>
+                    </div>
+                    <div class="exzoom_nav"></div>
+                </div>
+            </div>
+            <div class="col-12 description text-center mt-3 bg-light">
+                <h3>Bitis Hunter X 2020 <br>
+                    <small>Mã sản phẩm: HUNTER-X-17TH</small>
+                </h3>
+                <h5><b>899,000 ₫</b></h5>
+                <p>*Đã bao gồm VAT</p>
+                <h3>Thương Hiệu: Hoàng Sang</h3>
+                
+            </div>
+            <div class="col-12 text-center py-3 bg-light">
+                <button class="btn btn-danger"><i class="fas fa-cart-plus"></i> MUA NGAY</button>
+                <button class="btn btn-danger"><i class="fas fa-heart"></i> Yêu Thích</button>
+                <button class="btn btn-danger"><i class="fas fa-pen"></i> Đánh Giá</button>
+            </div>
+        </div>
+    </div>
     <!-- Chân trang -->
     <footer class="container-fluid">
         <div class="row pt-3 pb-3 bg-light dk pt-5">
@@ -132,6 +168,19 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
     <script>
+        $(function(){
+
+$("#exzoom").exzoom({
+    "navItemMargin": 7,
+
+    "autoPlay": true,
+    "autoPlayTimeout": 20000
+    
+});
+
+});
+
+
         $(function () {
         $('[data-toggle="tooltip"]').tooltip()
         })
@@ -140,7 +189,8 @@
         })
         $('.carousel').carousel()
     </script>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../js/jquery.exzoom.js"></script>
     <!-- End JS -->
 </body>
 </html>
