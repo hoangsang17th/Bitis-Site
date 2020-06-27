@@ -6,11 +6,12 @@
 h1{
     color: #4d96ff;
 }
-img{
-    max-width: 80%;
-}
 .imgt img{
+    max-width: 80%;
     border: 5px;
     border-radius: 5px;
     box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+}
+.imgsumenh img{
+    max-width: 80%;
 }
