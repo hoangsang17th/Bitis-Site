@@ -1,7 +1,3 @@
-#exzoom{
-    width: 50%;
-    
-}
 .description h3{
     font-size: 24px;
     font-weight: bold;
@@ -13,4 +9,16 @@
 .description h5 b{
     color: rgb(255, 2, 2);
     font-size: 27px;
+}
+.menubar{
+    background: #808080;
+    font-size: 20px;
+}
+.menubar li{
+    display: inline-block;
+}
+.img-fluid1{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }

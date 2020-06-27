@@ -66,15 +66,26 @@
         </form>
         </div>
     </nav>
+    <div class="container-fluid menubar">
+        <div class="row">
+            <div class="col-12 justify-content-center">
+                <ol class=""> 
+                    <li><a href="../index.html">Trang Chủ </a></li>>
+                    <li><a href="">Hunter </a></li>>
+                    <li><a href="">Bitis Hunter X 2025</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
     <!-- Bắt đầu trình bày sản phẩm -->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row my-5">
-            <div class="col-12 text-center justify-content-center">
+            <div class="col-12 col-sm-5 text-center justify-content-center">
                 <div class="exzoom" id="exzoom">
                     <!-- Images -->
                     <div class="exzoom_img_box">
                         <ul class='exzoom_img_ul'>
-                            <li><img src="../Img/Assets/biti6.1.jpg"/></li>
+                            <li><img  src="../Img/Assets/biti6.1.jpg"/></li>
                             <li><img src="../Img/Assets/biti6.2.jpg"/></li>
                             <li><img src="../Img/Assets/biti6.3.jpg"/></li>
                             <li><img src="../Img/Assets/biti7.1.jpg"/></li>
@@ -84,7 +95,7 @@
                     <div class="exzoom_nav"></div>
                 </div>
             </div>
-            <div class="col-12 description text-center mt-3 bg-light">
+            <div class="col-12 col-sm-7 description">
                 <h3>Bitis Hunter X 2020 <br>
                     <small>Mã sản phẩm: HUNTER-X-17TH</small>
                 </h3>
@@ -100,6 +111,7 @@
             </div>
         </div>
     </div>
+
     <!-- Chân trang -->
     <footer class="container-fluid">
         <div class="row pt-3 pb-3 bg-light dk pt-5">
@@ -146,7 +158,6 @@
                 <img src="../Img/Assets/visa.svg" alt="">
                 <img src="../Img/Assets/mastercard.svg" alt="">
                 <img src="../Img/Assets/jcb.svg" alt="">
-                
                 <img src="../Img/Assets/cash.svg" alt="">
                 <img src="../Img/Assets/internet-banking.svg" alt="">
                 <img src="../Img/Assets/installment.svg" alt="">
@@ -162,35 +173,25 @@
         </div>
     </footer>
     <!-- Start JS Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
     <script>
         $(function(){
+            $("#exzoom").exzoom({
+                "navItemMargin": 7,
 
-$("#exzoom").exzoom({
-    "navItemMargin": 7,
+                "autoPlay": true,
+                "autoPlayTimeout": 20000
+                
+            });
 
-    "autoPlay": true,
-    "autoPlayTimeout": 20000
-    
-});
-
-});
-
-
-        $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-        })
-        $('#myCollapsible').collapse({
-            toggle: false
-        })
-        $('.carousel').carousel()
+        });
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="../js/jquery.exzoom.js"></script>
+    <script src="../js/ZoomX.js"></script>
     <!-- End JS -->
 </body>
 </html>
