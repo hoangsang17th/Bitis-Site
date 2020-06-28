@@ -12,24 +12,34 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="./js/loadpage.js">
         $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
+            $('[data-toggle="tooltip"]').tooltip();
+            $("#zoom_05").elevateZoom({
+            zoomType				: "inner",
+            cursor: "crosshair"
+        });
         });
     </script>
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="./css/Bitis-Hunter-X.css">
-
+    <script>
+        
+    </script>
 </head>
 <body>
     <div id="header"></div>
     <div class="container-fluid bg-dark">
         <div class="row">
             <div class="col-1">
-                
             </div>
-            <div class="col">
+            <div class="col-11">
                 <a href="index.html">Trang Chủ ></a>&ensp;
                 <a href="">Sản Phẩm ></a>&ensp;
                 <a href="">Bitis Hunter X</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <img width="100%" id="zoom_05" src="./Img/Assets/biti1.1.jpg" data-zoom-image="./Img/Assets/biti1.1.jpg"/>
             </div>
         </div>
     </div>
@@ -38,5 +48,8 @@
 
     <!-- Chân trang -->
     <div id="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="./js/jquery.elevateZoom-3.0.8.min.js"></script>
 </body>
 </html>
