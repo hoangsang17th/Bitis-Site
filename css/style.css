@@ -17,7 +17,7 @@ a{
     font-size: 16px;
     color: #fff;
 }
-.nav-item:hover{
+.navshover:hover{
     margin-left: 5px;
     margin-right: 5px;
     font-weight: bold;
