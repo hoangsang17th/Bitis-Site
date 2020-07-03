@@ -101,19 +101,70 @@
                         <h1>MÃ KHUYẾN MÃI</h1>
                         <!-- <img src="./Img/Assets/Sale-News.jpg" alt="" class="w-100"> -->
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 text-center contenttt">
-                        <img src="./Img/Assets/Sale-Poster-Same-Price.jpg" alt="" class="w-100 my-3">
+                    <div class="container">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Mã</th>
+                                    <th scope="col">Nội dung</th>
+                                    <th scope="col">Thời hạn</th>
+                                    <th scope="col">Copy</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row"><input type="text" class="form-control disabled" value="50BUPTO20" id="MGG1" disabled></th>
+                                    <td>Giảm giá 20% cho đơn hàng trên 50 tỷ</td>
+                                    <td>20 Năm</td>
+                                    <td><button class="btn btn-success" onclick="CopyFunction1()">Copy</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="text" class="form-control disabled" value="1507SALE70" id="MGG2" disabled></th>
+                                    <td>Ngày 15/7 Giảm giá 70% mọi đơn hàng dưới 10k</td>
+                                    <td>00h01m 15/7/2020</td>
+                                    <td><button class="btn btn-success" onclick="CopyFunction2()">Copy</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="text" class="form-control disabled" value="MP40" id="MGG3" disabled></th>
+                                    <td>Áp dụng cho đơn hàng trên 1Tr</td>
+                                    <td>Free Ship</td>
+                                    <td><button class="btn btn-success" onclick="CopyFunction3()">Copy</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 text-center contenttt">
-                        <img src="./Img/Assets/thumbss.jpg" alt="" class="w-100 my-3">
-                    </div>
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
     
 
 
     <div id="footer"></div>
+    <script>
+        function CopyFunction1() {
+            var copyText = document.getElementById("MGG1");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("Copy Mã : " + copyText.value+ " Thành Công");
+            }
+            function CopyFunction2() {
+            var copyText = document.getElementById("MGG2");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("Copy Mã : " + copyText.value+ " Thành Công");
+            }
+            function CopyFunction3() {
+            var copyText = document.getElementById("MGG3");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("Copy Mã : " + copyText.value+ " Thành Công");
+            }
+    </script>
 </body>
 </html>
