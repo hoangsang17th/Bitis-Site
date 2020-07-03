@@ -19,16 +19,51 @@ small{
         font-size: 16px;
     }
 }
-.kichthuoc p{
+/* .kichthuoc p{
 	border: 1px solid;
 	padding: 0 5px;
 	margin-left: 5px;
 }
 .kichthuoc p:hover{
 	background-color: green;
+} */
+
+
+.kichthuoc p{
+    padding-top: 12px;
 }
+
+.sizes{
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.size{
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #eee;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.size.active{
+    background-color: var(--primary);
+    color: #fff;
+    transition: .5s;
+}
+
+
+
 .btn-end button{
-	width: 30%;
+    font-size: 16px;
+	width: 40%;
 	align-items: center;
 }
 @media only screen and (max-width:992px) and (min-width:768px){

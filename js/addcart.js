@@ -7,15 +7,19 @@ else{
 
 function ready(){
     var removeCartItemButtons= document.getElementsByClassName("btn-danger")
-    console.log(removeCartItemButtons)
+    // console.log(removeCartItemButtons)
     for (var i=0; i<removeCartItemButtons.length; i++){
         var button= removeCartItemButtons[i]
-        button.addEventListener('click', function(){
-            var buttonClicked = event.target
-            buttonClicked.parentElement.parentElement.remove()
-            updateCartTotal()
-        })
+        button.addEventListener('click', removeCartItem)
     }
+
+    var quantityInputs = document.getElementsByClassName("cart")
+}
+
+function removeCartItem{
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
+    updateCartTotal()
 }
 // btn-danger là nút xóa sản phẩm khỏi giỏ hàng
 
@@ -34,3 +38,13 @@ function updateCartTotal(){
     document.getElementsByClassName('cart-total-price')[0].innerText='$ '+ total
 
 }
+
+
+
+// (function(){
+
+//     $("#cart").on("click", function() {
+//       $(".shopping-cart").fadeToggle( "fast");
+//     });
+    
+//   })();

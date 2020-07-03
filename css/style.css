@@ -1,6 +1,7 @@
 /* import fonts from google font */
 /* Css phần Header và Navbar */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:ital,wght@0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap');
+
 nav{
     background-color: #1ba8ff;
 }
@@ -59,7 +60,8 @@ a:hover{
 .search-box:hover>.search-txt{
     width: 240px;
     background: #fff;
-    transition: 0.1s;
+    transition: 1s;
+    transition-delay: 0.2s;
 }
 @media only screen and (max-width:992px){
     .search-box:hover>.search-txt{
@@ -114,3 +116,21 @@ footer .bq{
 /* .row .col-sm-3 img{
     width: 100%;
 } */
+.sm-menu{
+    background: #487eb0;
+    position: absolute;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  .sm-menu::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #487eb0;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  

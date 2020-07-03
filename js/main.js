@@ -9,12 +9,13 @@ $(".slider-one")
     nextArrow: ".site-slider .slider-btn .next",
 });
 // Khi cửa sổ được load sẽ tự gọi hàm alert ra
-$(window).on('load', function () {  
-    var con= confirm("Đăng kí nhận bản tin Hoàng Sang\nĐừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn");
-    if(con==true){
-        location.href = "#footer"
-    }
-});
+// $(window).on('load', function () {  
+//     var con= confirm("Đăng kí nhận bản tin Hoàng Sang\nĐừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn");
+//     if(con==true){
+//         location.href = "#footer"
+//     }
+//     console.log("Hello");
+// });
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()

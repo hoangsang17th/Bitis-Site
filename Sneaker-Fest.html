@@ -6,8 +6,10 @@
     <title>Sneaker Fest - Hoàng Sang</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="shortcut icon" href="../Img/Assets/SangLogo.png">
-
+    <link rel="stylesheet" href="./css/Sneaker-Fest.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Có gói jquery vô thì bị lỗi -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -23,7 +25,27 @@
 <!-- Sử dụng Ajax để sử lý phần này nhé -->
 <!-- Tạo 2 đối tượng cần tải gói ajax để thay thế -->
 <div id="header"></div>
+<div class="middle">
+    <div class="sm-container">
+      <i class="show-btn fas fa-user"></i>
+      <div class="sm-menu">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
 
+
+  <script>
+
+
+    $(".show-btn").click(function(){
+      $(".sm-menu").fadeToggle("fast");
+    });
+  </script>
 
 
 <div id="footer"></div>

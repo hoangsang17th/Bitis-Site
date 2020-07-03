@@ -28,7 +28,8 @@
       gtag('js', new Date());
       gtag('config', 'UA-158246306-1');
     </script>
-
+    <!-- <script async src="https://cse.google.com/cse.js?cx=001159946809632492442:1ktplpnsqyw"></script>
+    <div class="gcse-search"></div> -->
 </head>
 <body >
   <script>
@@ -83,7 +84,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand mx-auto " href="index.html"><img src="./Img/Assets/SangLogo.png" alt="Logo Hoàng Sang" width="30px" height="30px"></a>
-    <button class="btn d-inline" data-toggle="tooltip" data-placement="top" title="Giỏ hàng hiện tại của bạn"><i class="fas fa-cart-plus"></i></button>
+    <div class="pl-3 d-inline show-cart" data-toggle="tooltip" data-placement="top" title="Giỏ hàng hiện tại của bạn"><i class="fas fa-cart-plus"></i></div>
     <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item navshover active mx-auto">
@@ -104,10 +105,12 @@
     </ul>
     <form class="form-inline search-box">
       <input class="search-txt" type="search" placeholder=" Tìm Kiếm Sản Phẩm">
-      <button class="search-btn btn mx-auto" type="submit" data-toggle="tooltip" data-placement="top" title="Tìm kiếm sản phẩm"><i class="fas fa-search"></i></button>
+      <a class="search-btn btn mx-auto" type="submit" data-toggle="tooltip" data-placement="top" title="Tìm kiếm sản phẩm"><i class="fas fa-search"></i></a>
     </form>
     </div>
   </nav>
+  <!-- Giõ hàng cơ bản -->
+
   <!-- Banner Hunter -->
   <a href="Uu-dai.html"><img src="./Img/Giay/BannerHunter.jpg" alt="" width="100%"></a>
   <!-- Free Giao Hàng -->
@@ -1012,6 +1015,12 @@
           // instead of a settings object
         ]
       });
+      
     </script>
+    <!-- <script>
+      $(".show-cart").click(function(){
+        $(".sm-menu").fadeToggle("fast");
+      });
+    </script> -->
 </body>
 </html>
