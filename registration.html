@@ -15,6 +15,7 @@
     <script src="https://use.fontawesome.com/releases/v5.8.2/css/all.css"></script>
     <!-- Css -->
     <link rel='stylesheet' type='text/css' media='screen' href='./css/registration.css'>
+    <script src="./js/Signup.js"></script>
 </head>
 <body style="background: url(../Img/Assets/bglogin.jpg) no-repeat center fixed ;">
     <div class="modal-dialog text-center">
@@ -25,27 +26,27 @@
                 </div>
                 <div class="form-head-register">
                     <h4 class="title-block">Đăng Ký Tài Khoản</h4>
-                    <form id="frmSignup"  action="index.html">
+                    <form id="frmSignup" >
                         
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-user-tie"></i></div>
                             </div>
-                            <input name="username" type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="username" required>
+                            <input name="username" type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="username" required id="usernameSignup">
                         </div>
                         
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="far fa-envelope"></i></div>
                             </div>
-                            <input name="email" type="email" class="form-control" placeholder="Email" autocomplete="email" required>
+                            <input name="email" type="email" class="form-control" placeholder="Email" autocomplete="email" required id="emailSignup">
                         </div>
             
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fas fa-lock"></i></div>
                             </div>
-                            <input name="password" type="password" class="form-control" placeholder="Mật khẩu" autocomplete="new-password" aria-autocomplete="list" required>
+                            <input name="password" type="password" class="form-control" placeholder="Mật khẩu" autocomplete="new-password" aria-autocomplete="list" required id="passwordSignup">
                         </div>
                     <div class="form-check">
                         <div class="checkbox-area">
@@ -56,7 +57,7 @@
                         </div>
                     <div id="blockcbAgree-error"></div>
                     </div>
-                    <button type="submit2" class="btn btn-primary">Đăng ký</button>
+                    <button onclick="Signup()" type="submit2" class="btn btn-primary">Đăng ký</button>
                     </form>
                     <div class="switch-type-login">Hoặc sử dụng tài khoản khác</div>
                     <div class="signin-options">
