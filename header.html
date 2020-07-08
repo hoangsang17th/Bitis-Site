@@ -59,6 +59,7 @@
       }(document, 'script', 'facebook-jssdk'));
     }, 0);
   </script>
+  <link rel="stylesheet" href="./js/login.js">
   <header class="container-fluid">
     <div class="row bg-hd">
       <div class="col-lg-9 col-md-7 col-sm-4 col-5">
@@ -67,7 +68,7 @@
         <a href="https://www.instagram.com/HoangSang17TH" data-toggle="tooltip" data-placement="top" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://bit.ly/Sub17Th" data-toggle="tooltip" data-placement="top" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
-      <div class="col-lg-3 col-md-5 col-sm-8 col">
+      <div class="col-lg-3 col-md-5 col-sm-8 col acount">
         <a href="registration.html" data-toggle="tooltip" data-placement="top" title="Trở thành thành viên của Hoàng Sang để nhận được nhiều ưu đãi!"><i class="fas fa-key"></i> Đăng Ký </a>|
         <a href="login.html" data-toggle="tooltip" data-placement="top" title="Đăng nhập để sử dụng nhiều tính năng hơn!"><i class="fas fa-user-tie"></i> Đăng Nhập</a>
       </div>
@@ -100,50 +101,67 @@
     </ul>
     <form class="form-inline search-box">
       <input class="search-txt" type="search" placeholder=" Tìm Kiếm Sản Phẩm">
-      <button class="search-btn btn mx-auto" type="submit" data-toggle="tooltip" data-placement="top" title="Tìm kiếm sản phẩm"><i class="fas fa-search"></i></button>
+      <a class="search-btn btn mx-auto" type="submit" data-toggle="tooltip" data-placement="top" title="Tìm kiếm sản phẩm"><i class="fas fa-search"></i></a>
     </form>
     </div>
   </nav>
 
 <!-- Giao diện khi bấm vào giỏ hàng -->
-  <div class="modal fade orderCart mt-3 " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+  <div class="modal fade orderCart" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content ">  
-        <div id="checkout_form" class="cart_box pl-5 pt-4 shadow-sm mt-3 pb-4" style="width: 100%;margin: auto;">
+        <div id="checkout_form" class="cart_box pl-5 pt-4 mt-3 pb-4">
           <p class="ml-2" style="font-size: 130%;font-weight: bold;">Giỏ Hàng Của Bạn</p>
           <div data-spy="scroll" data-target="#myScrollspy" data-offset="10" style="height:340px;overflow-y: scroll;padding-top: 5px;padding-right: 10px;">
+            
           <table class="table table-borderless">
             <thead>
             <tr>
-              <th scope="col" style="width: 40%;font-size: 115%;" >Tên Sản Phẩm</th>
-              <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Số Lượng</th>
-              <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Giá</th>
-              <th scope="col" style="width: 20%;font-size: 115%;" class="text-center">Thao Tác</th>
+              <th scope="col" >Tên Sản Phẩm</th>
+              <th scope="col" class="text-center">Số Lượng</th>
+              <th scope="col" class="text-center">Giá</th>
+              <th scope="col" class="text-center">Thao Tác</th>
             </tr>
             </thead>
+            <tr>
+              <td scope="col" >Bitis Hunter X</td>
+              <td scope="col" class="text-center">20</td>
+              <td scope="col" class="text-center">200K</td>
+              <td scope="col" class="text-center">Xóa</td>
+            </tr>
           <tbody id="prinf_order_cart">
           </tbody>
           </table>
           </div>
-        <div class="float-left pl-2" style="width: 30%;">
-        <p class="font-weight-bold mt-2" style="font-size: 115%">Tổng Cộng</p>
+          <div class="d-flex justify-content-between">
+            <p class="float-left">Tổng Cộng</p>
+            <p class="float-right pr-5" id="total_money">2Tr</p>
+          </div>
+          <div class="d-flex justify-content-between">
+            <button type="button" class="btn text-white" data-dismiss="modal" style="background: #ee0202;">Đóng</button>
+            <div onclick="window.location.href='Tien-hanh-dat-hang.html'" class="btn mr-5 text-white float-right" style="background: #1ba8ff;">Thanh toán</div>
+          </div>
+        </div>
       </div>
-  <div  class="float-right pr-5" style="width: 30%;">
-    <p id="total_money" class="font-weight-bold float-right mt-2" style="font-size: 115%"> </p>
-  </div>
-  <div style="clear: both;"></div>
-  <div onclick="window.location.href='Tien-hanh-dat-hang.html'" class="btn mr-5 text-white float-right" style="background: #1ba8ff;">Thanh toán</div>
-  <div style="clear: both;"></div>
-  </div>
-
-
-<!-- Danh sách sản phẩm trong giỏ hàng -->
-  <div id="list_food_home" class="container">
-    <div class="row" id="prinf_food">
     </div>
   </div>
 
 
+
+
+  <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded mr-2" alt="...">
+      <strong class="mr-auto">Hoàng Sang</strong>
+      <small class="text-muted">1 Năm trước</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="toast-body">
+      Xin chào bạn! Tôi đơn giản là đang bị ngáo!
+    </div>
+  </div> -->
     <!-- Start JS Bootstrap-->
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>

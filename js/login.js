@@ -34,3 +34,23 @@ $(document).ready(function()
         return false;
     });
 });
+
+var account = [
+    {
+        username = "admin",
+        password = "123"
+    },
+    {
+        username = "sict",
+        password = "12345"
+    }
+]
+function getInfo(){
+    var username = document.getElementById("username").value
+    var password = document.getElementById("password").value
+    for(i=0;i<account.length;i++){
+        if(username == account[i].username && password == account[i].password){
+            document.getElementById("acount").innerHTML = account[i].username;
+        }
+    }
+}

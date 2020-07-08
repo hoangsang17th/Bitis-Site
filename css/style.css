@@ -13,7 +13,7 @@ nav{
     padding-top: 5px;
     padding-bottom: 5px;
 }
-a{
+header a{
     text-decoration: none;
     font-size: 16px;
     color: #fff;
@@ -30,7 +30,7 @@ a{
     color: black;
 }
 @media only screen and (max-width:375px){
-    a{
+    header a{
         font-size: 12px;
         color: #fff;
     }
@@ -41,7 +41,7 @@ a{
 a:link{
     text-decoration: none!important;
 }
-a:hover{
+header a:hover{
     color: #000;
     opacity: 1;
 }
