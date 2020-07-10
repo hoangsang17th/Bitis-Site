@@ -36,6 +36,7 @@ span.sticker{
     font-size: 18px;
     font-weight: 500;
     line-height: 18px;
+    
     text-transform: capitalize;
 }
 .price-box {
@@ -89,5 +90,17 @@ span.sticker{
 @media only screen and (max-width: 475px){
     .add-actions-link{
         display: none;
+    }
+    .product-name h4{
+        font-size:16px
+    }
+    .nrate .fa-star{
+        display: none;
+    }
+    .price-box .new-price{
+        font-size: 12px;
+    }
+    .price-box .old-price{
+        font-size: 12px;
     }
 }
